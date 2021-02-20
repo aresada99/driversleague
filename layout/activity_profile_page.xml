@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <ImageView
+        android:id="@+id/infoBorder"
+        android:layout_width="341dp"
+        android:layout_height="477dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_border_black" />
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Driver Information"
+        android:textColor="@color/purple_500"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toTopOf="@+id/infoBorder" />
+
+    <TextView
+        android:id="@+id/tv_firm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Firm :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_information" />
+
+    <TextView
+        android:id="@+id/tv_chassisNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Chassis Number :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_firm" />
+
+    <TextView
+        android:id="@+id/tv_avgSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Average Speed(km/h) :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chassisNo" />
+
+    <TextView
+        android:id="@+id/tv_cruiseControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Cruise Control :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_avgSpeed" />
+
+    <TextView
+        android:id="@+id/tv_brake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Brake :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cruiseControl" />
+
+    <TextView
+        android:id="@+id/tv_tonnage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tonnage :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_brake" />
+
+    <TextView
+        android:id="@+id/tv_idle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Idle :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tonnage" />
+
+    <TextView
+        android:id="@+id/tv_fuelAvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Fuel Average(Lt/km) :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_idle" />
+
+    <TextView
+        android:id="@+id/tv_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="KM :"
+        android:textColor="@color/purple_500"
+        android:textSize="19sp"
+        app:layout_constraintStart_toStartOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fuelAvg" />
+
+    <ImageView
+        android:id="@+id/profileBorder"
+        android:layout_width="341dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/infoBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_border_black" />
+
+    <TextView
+        android:id="@+id/tv_profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name's Profile"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profileBorder"
+        app:layout_constraintEnd_toEndOf="@+id/profileBorder"
+        app:layout_constraintStart_toStartOf="@+id/profileBorder"
+        app:layout_constraintTop_toTopOf="@+id/profileBorder" />
+
+    <TextView
+        android:id="@+id/tv_eq_firm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_information" />
+
+    <TextView
+        android:id="@+id/tv_eq_chassisNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_firm" />
+
+    <TextView
+        android:id="@+id/tv_eq_avgSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_chassisNo" />
+
+    <TextView
+        android:id="@+id/tv_eq_cruiseControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_avgSpeed" />
+
+    <TextView
+        android:id="@+id/tv_eq_brake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_cruiseControl" />
+
+
+    <TextView
+        android:id="@+id/tv_eq_tonnage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_brake" />
+
+    <TextView
+        android:id="@+id/tv_eq_idle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_tonnage" />
+
+    <TextView
+        android:id="@+id/tv_eq_fuelAvg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_idle" />
+
+    <TextView
+        android:id="@+id/tv_eq_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="null"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/infoBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_eq_fuelAvg" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

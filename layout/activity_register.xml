@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/Register"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_reg_name"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Name*"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_register" />
+
+    <EditText
+        android:id="@+id/et_reg_surname"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_name"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Suname*"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_name" />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="E-mail*"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_surname" />
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Password*"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_email" />
+
+    <EditText
+        android:id="@+id/et_reg_confirmPassword"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Confirm Password*"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_password" />
+
+    <EditText
+        android:id="@+id/et_reg_pnumber"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_confirmPassword" />
+
+    <EditText
+        android:id="@+id/et_reg_carMake"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_car"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Car Make"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_pnumber" />
+
+    <EditText
+        android:id="@+id/et_reg_carModel"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/ic_car"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Car Model"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_carMake" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="196dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_border"
+        android:text="@string/Register"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reg_carModel" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="83dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
