@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DriverLeague</string>
+    <string name="DriverName">Driver Name</string>
+    <string name="DriverSurname">Driver Surname</string>
+    <string name="Brand">Brand</string>
+    <string name="AddDriver">Add Driver</string>
+    <string name="ShowList">Show List</string>
+    <string name="Delete">Delete</string>
+    <string name="Email">E-mail</string>
+    <string name="Password">Password</string>
+    <string name="Login">LOGIN</string>
+    <string name="Register">REGISTER</string>
+    <string name="Name">Name</string>
+    <string name="Surename">Surname</string>
+</resources>
