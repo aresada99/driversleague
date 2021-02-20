@@ -1,16 +1,7 @@
 package com.example.driverleague;
 
 public class DriverModel {
-    /*
-    * email  !!
-    * password  !!
-    * nickname   !!
-    * make
-    * model
-    * nation
-    * company name
-    * phone num.   !!
-    * */
+
 
     private int id;
     private String name;
