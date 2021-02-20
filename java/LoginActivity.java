@@ -16,12 +16,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/*
-* notepad++ indir
-* Toast msg yerine pop-up
-* push notifications
-* loginden sonra geri gidilmesin
-* */
 
 public class LoginActivity extends AppCompatActivity {
 
